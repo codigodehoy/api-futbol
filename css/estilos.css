@@ -1,0 +1,42 @@
+body {
+  background: url("../futbol.jpg") center no-repeat;
+  background-size: cover;
+}
+.contenedor {
+  width: 50%;
+  margin: 150px auto auto auto;
+  padding: 50px 10px;
+  background: #3f2844;
+  opacity: 0.8;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 296px 75px 296px;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "img1 versus img2"
+    "nombre versus nombre2";
+}
+#img1 {
+  grid-area: img1;
+}
+#versus {
+  grid-area: versus;
+  padding: 40px 0;
+}
+#img2 {
+  grid-area: img2;
+}
+
+#nombre {
+  grid-area: nombre;
+}
+#nombre2 {
+  grid-area: nombre2;
+}
+.contenedor p {
+  color: #fff;
+  font-size: 24px;
+  display: block;
+}
